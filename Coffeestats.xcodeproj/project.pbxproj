@@ -112,6 +112,7 @@
 			buildConfigurationList = 9F42816F1E7AFCCD00914608 /* Build configuration list for PBXNativeTarget "Coffeestats" */;
 			buildPhases = (
 				576C486242D2FD8110A88138 /* [CP] Check Pods Manifest.lock */,
+				9F4DDB871E7C6F5300C3DC3B /* Run swiftlint */,
 				9F4281591E7AFCCD00914608 /* Sources */,
 				9F42815A1E7AFCCD00914608 /* Frameworks */,
 				9F42815B1E7AFCCD00914608 /* Resources */,
@@ -220,6 +221,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Coffeestats/Pods-Coffeestats-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		9F4DDB871E7C6F5300C3DC3B /* Run swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run swiftlint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint";
 		};
 /* End PBXShellScriptBuildPhase section */
 
