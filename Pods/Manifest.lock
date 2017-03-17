@@ -1,12 +1,15 @@
 PODS:
+  - Locksmith (3.0.0)
   - SwiftLint (0.16.1)
 
 DEPENDENCIES:
+  - Locksmith
   - SwiftLint
 
 SPEC CHECKSUMS:
+  Locksmith: 310b4cc5031af5728bf4db5d4de547a5100c6a3b
   SwiftLint: b8b683208cc09640898f16318a7a452274e91f61
 
-PODFILE CHECKSUM: d58099f85dfd8dcfeb4fe10aa20852d2246df7fa
+PODFILE CHECKSUM: ea9944f86233dac8328970e62d4f5c7f2c3f6baf
 
 COCOAPODS: 1.2.0
