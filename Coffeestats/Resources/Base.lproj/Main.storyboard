@@ -17,10 +17,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="aNf-mw-YRK" kind="relationship" relationship="rootViewController" id="ztJ-b2-1XC"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="am5-hR-jIN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-98" y="153"/>
+        </scene>
+        <!--Coffeestats-->
+        <scene sceneID="wkF-GO-b0K">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="aNf-mw-YRK" customClass="ViewController" customModule="Coffeestats" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rpY-hi-sAl"/>
+                        <viewControllerLayoutGuide type="bottom" id="heO-lg-jQa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ngr-aa-zvx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndY-xp-ILG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ndY-xp-ILG" firstAttribute="leading" secondItem="ngr-aa-zvx" secondAttribute="leading" id="Gkb-CR-zUL"/>
+                            <constraint firstItem="ndY-xp-ILG" firstAttribute="top" secondItem="rpY-hi-sAl" secondAttribute="bottom" id="dsD-b8-rIS"/>
+                            <constraint firstItem="heO-lg-jQa" firstAttribute="top" secondItem="ndY-xp-ILG" secondAttribute="bottom" id="f0l-Oe-Uly"/>
+                            <constraint firstAttribute="trailing" secondItem="ndY-xp-ILG" secondAttribute="trailing" id="lIs-Sb-Tdp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Coffeestats" id="uAr-4L-1TG">
+                        <barButtonItem key="rightBarButtonItem" title="Login" id="iK3-Sp-cNc">
+                            <connections>
+                                <action selector="handleLogin" destination="aNf-mw-YRK" id="gMA-vm-b0Y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="loginButton" destination="iK3-Sp-cNc" id="LR5-zC-KVi"/>
+                        <outlet property="webView" destination="ndY-xp-ILG" id="SWw-TD-gcD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4l-4m-jo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="791" y="152"/>
         </scene>
     </scenes>
 </document>

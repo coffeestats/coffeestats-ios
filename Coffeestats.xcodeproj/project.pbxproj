@@ -12,6 +12,9 @@
 		9F4DDB7D1E7C6D0C00C3DC3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4DDB721E7C6D0B00C3DC3B /* Assets.xcassets */; };
 		9F4DDB7E1E7C6D0C00C3DC3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4DDB731E7C6D0B00C3DC3B /* LaunchScreen.storyboard */; };
 		9F4DDB7F1E7C6D0C00C3DC3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4DDB751E7C6D0B00C3DC3B /* Main.storyboard */; };
+		9F4DDB931E7C739E00C3DC3B /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4DDB901E7C739E00C3DC3B /* QRCodeScannerViewController.swift */; };
+		9F4DDB941E7C739E00C3DC3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4DDB911E7C739E00C3DC3B /* ViewController.swift */; };
+		9F4DDB961E7C75DD00C3DC3B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4DDB951E7C75DD00C3DC3B /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		9F4DDB741E7C6D0B00C3DC3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F4DDB761E7C6D0C00C3DC3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F4DDB781E7C6D0C00C3DC3B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4DDB901E7C739E00C3DC3B /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		9F4DDB911E7C739E00C3DC3B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F4DDB951E7C75DD00C3DC3B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BC000BA94DE42752CD28DE14 /* Pods_Coffeestats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffeestats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F4DDB961E7C75DD00C3DC3B /* AVFoundation.framework in Frameworks */,
 				9F2FAF1708FF18398A15B50F /* Pods_Coffeestats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				9F4DDB6D1E7C6D0B00C3DC3B /* AppDelegate.swift */,
+				9F4DDB901E7C739E00C3DC3B /* QRCodeScannerViewController.swift */,
+				9F4DDB911E7C739E00C3DC3B /* ViewController.swift */,
 			);
 			name = Classes;
 			path = Coffeestats/Classes;
@@ -99,6 +108,7 @@
 		D92843A182714FFC20B28869 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F4DDB951E7C75DD00C3DC3B /* AVFoundation.framework */,
 				BC000BA94DE42752CD28DE14 /* Pods_Coffeestats.framework */,
 			);
 			name = Frameworks;
@@ -244,6 +254,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F4DDB791E7C6D0C00C3DC3B /* AppDelegate.swift in Sources */,
+				9F4DDB941E7C739E00C3DC3B /* ViewController.swift in Sources */,
+				9F4DDB931E7C739E00C3DC3B /* QRCodeScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
